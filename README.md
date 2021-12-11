@@ -29,7 +29,7 @@ total <- aggregate((Cases ~ Date),data,sum)
 plot(total$Date, total$Cases, type = "o", col = "BLUE", main = "Total Cases", xlab = "Date", ylab = "Cases")
 
 ```
-
+![image](https://i.imgur.com/a6oHVaL.png)
 ## Monthly Cases Analytics of Pakistan
 
 ```{r message=FALSE, warning=FALSE}
@@ -46,6 +46,7 @@ ggplot(data, aes(x=Date)) +
         panel.grid.minor = element_blank())
 
 ```
+![image](https://i.imgur.com/rUJMMUI.png)
 
 # Function to change Type and Sorting of Dataset
 
@@ -87,6 +88,7 @@ plot_covid(sort_ = data$Province, type_ = "Cases")
 plot_covid(sort_ = data$Province, type_ = "Deaths")
 
 ```
+![image](https://i.imgur.com/xiwtXO7.png)
 
 ## Monthly Recovered Cases plot sorted with respect to Provinces of Pakistan
 
@@ -103,3 +105,5 @@ You can also perform sorting for cities as well
 plot_covid(sort_ = data$City, type_ = "Cases")
 
 ```
+
+![image](https://i.imgur.com/aYMV4Cr.jpg)
